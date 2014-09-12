@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Snap Detector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       {{extend 'plugin_layouts/layouts/Customize.html'}}
+       {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Customize/style.css'))}}
+       {{response.files.append(URL('static','plugin_layouts/superfish.js'))}}
+       {{include 'web2py_ajax.html'}}
+       
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+       {{=form}}
+
+  </body>
+</html>
